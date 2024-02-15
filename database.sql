@@ -21,3 +21,13 @@ CREATE TABLE IF NOT EXISTS servers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (created_by) REFERENCES users(user_id)
 );
+
+
+-- Table pour stocker les canaux de discussion
+CREATE TABLE IF NOT EXISTS channels (
+    channel_id INT AUTO_INCREMENT PRIMARY KEY,
+    channel_name VARCHAR(100) NOT NULL,
+    server_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (server_id) REFERENCES servers(server_id)
+);
