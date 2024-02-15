@@ -12,3 +12,12 @@ CREATE TABLE IF NOT EXISTS users (
     password VARCHAR(100) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Table pour stocker les serveurs
+CREATE TABLE IF NOT EXISTS servers (
+    server_id INT AUTO_INCREMENT PRIMARY KEY,
+    server_name VARCHAR(100) NOT NULL,
+    created_by INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (created_by) REFERENCES users(user_id)
+);
