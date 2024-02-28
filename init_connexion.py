@@ -51,3 +51,7 @@ def afficher_fenetre_inscription():
 root = tk.Tk()
 root.title("My Discord")
 root.geometry("800x490")  # Définition de la taille de la fenêtre principale
+
+# Création d'un Canvas pour l'image de fond
+canvas = tk.Canvas(root, width=800, height=600)
+canvas.pack()
