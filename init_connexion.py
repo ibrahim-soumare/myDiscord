@@ -19,3 +19,20 @@ def afficher_fenetre_inscription():
     etiquette_prenom = tk.Label(fenetre_inscription, text="Prénom:", bg="black", fg="white")
     etiquette_prenom.grid(row=0, column=0, padx=5, pady=5)
 
+    champ_prenom = tk.Entry(fenetre_inscription)
+    champ_prenom.grid(row=0, column=1, padx=5, pady=5)
+
+    champ_prenom = tk.Entry(fenetre_inscription)
+    champ_prenom.grid(row=0, column=1, padx=5, pady=5)
+
+    etiquette_nom = tk.Label(fenetre_inscription, text="Nom:", bg="black", fg="white")
+    etiquette_nom.grid(row=1, column=0, padx=5, pady=5)
+
+    champ_nom = tk.Entry(fenetre_inscription)
+    champ_nom.grid(row=1, column=1, padx=5, pady=5)
+
+    etiquette_email = tk.Label(fenetre_inscription, text="E-mail:", bg="black", fg="white")
+    etiquette_email.grid(row=2, column=0, padx=5, pady=5)
+
+    champ_email = tk.Entry(fenetre_inscription)
+    champ_email.grid(row=2, column=1, padx=5, pady=5)
