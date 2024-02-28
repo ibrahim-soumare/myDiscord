@@ -43,6 +43,8 @@ def afficher_fenetre_inscription():
     bouton_inscription = tk.Button(fenetre_inscription, text="S'inscrire", command=afficher_message, bg="black", fg="white")
     bouton_inscription.grid(row=4, column=0, columnspan=2, pady=5)
 
+
+
 # Création de la fenêtre principale
 root = tk.Tk()
 root.title("My Discord")
@@ -84,3 +86,4 @@ bouton_inscription = tk.Button(cadre_connexion, text="S'inscrire", command=affic
 bouton_inscription.grid(row=3, column=0, columnspan=2, pady=5)
 
 root.mainloop()
+
