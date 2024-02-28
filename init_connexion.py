@@ -12,4 +12,5 @@ def afficher_fenetre_inscription():
     fenetre_inscription.title("Inscription")
     fenetre_inscription.geometry("400x300")  # Définition de la taille de la fenêtre
 
-   
+    # Changer le fond en noir et l'écriture en blanc pour la fenêtre d'inscription
+    fenetre_inscription.configure(bg="black")
