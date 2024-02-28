@@ -55,3 +55,7 @@ root.geometry("800x490")  # Définition de la taille de la fenêtre principale
 # Création d'un Canvas pour l'image de fond
 canvas = tk.Canvas(root, width=800, height=600)
 canvas.pack()
+
+# Chargement de l'image de fond
+image_fond = tk.PhotoImage(file="fond_discord.png")
+canvas.create_image(0, 0, anchor=tk.NW, image=image_fond)
