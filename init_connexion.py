@@ -36,3 +36,13 @@ def afficher_fenetre_inscription():
 
     champ_email = tk.Entry(fenetre_inscription)
     champ_email.grid(row=2, column=1, padx=5, pady=5)
+
+
+    etiquette_mot_de_passe_inscription = tk.Label(fenetre_inscription, text="Mot de passe:", bg="black", fg="white")
+    etiquette_mot_de_passe_inscription.grid(row=3, column=0, padx=5, pady=5)
+
+    champ_mot_de_passe_inscription = tk.Entry(fenetre_inscription, show="*")
+    champ_mot_de_passe_inscription.grid(row=3, column=1, padx=5, pady=5)
+
+    bouton_inscription = tk.Button(fenetre_inscription, text="S'inscrire", command=afficher_message, bg="black", fg="white")
+    bouton_inscription.grid(row=4, column=0, columnspan=2, pady=5)
