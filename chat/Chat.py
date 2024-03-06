@@ -15,3 +15,7 @@ def ajouter_chat_interface(root):
     # Création de la zone de saisie pour les messages
     champ_message = tk.Entry(root, width=40)
     champ_message.grid(row=1, column=0, pady=5)
+
+ # Création du bouton pour envoyer un message
+    bouton_envoyer = tk.Button(root, text="Envoyer", command=lambda: envoyer_message(zone_messages, champ_message), bg="grey", fg="white")
+    bouton_envoyer.grid(row=1, column=1, pady=5)
